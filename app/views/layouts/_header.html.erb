@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand navbar-light bg-light">
+  <%= image_tag("rails.png", alt: "Rails", height: "30px")%>
+  <a class="navbar-brand" href="/">RoR SIB</a>
+  <div id="navbarNav" class="collapse navbar-collapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to 'Lihat artikel', {controller: 'articles'}, class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Manajemen User', {controller: 'users'}, class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>

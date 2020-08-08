@@ -1,0 +1,22 @@
+<%= render "layouts/header" %>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 card">
+      <div class="card-body">
+        <div class="card-title">
+          <h1>Disini tempat buat user baru</h1>
+        </div>
+        <div class="card-text">
+          <%= form_with model: @user, local: true do |form| %>
+            <%= form.label :title, class: "form-label" %>
+            <%= form.text_field :username, class: "form-control" %>
+            <%= form.label :password, class: "form-label" %>
+            <%= form.password_field :password, class: "form-control" %>
+            <%= link_to :"Kembali", users_path, class: "btn btn-info" %>
+            <%= form.submit :Kirim, class: "btn btn-success" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

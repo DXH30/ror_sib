@@ -1,12 +1,7 @@
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="/">RoR SIB</a>
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <%= link_to 'Lihat artikel', {controller: 'articles'}, class: "nav-link" %>
-    </li>
-  </ul>
-</nav>
-
-<p>
-Untuk mengecek isi artikel, klik link berikut ini
-</p>
+<%= render 'layouts/header' %>
+<div class="container">
+  <p>
+  Selamat datang di RoR SIB ! <br/>
+  RoR SIB merupakan Sistem Informasi Berita yang dibuat menggunakan framework Ruby on Rails <%= image_tag("rails.png", alt: "Rails", height: "30px")%> , Sistem ini masih dalam tahap pengembangan sehingga fiturnya masih terbilang sedikit. Tetapi mengikuti request dan saran akan diusahakan untuk menambah fitur sesuai dengan yang diinginkan
+  </p>
+</div>

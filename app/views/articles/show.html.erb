@@ -1,13 +1,21 @@
-<%= render 'header' %>
-<p>
-<strong>Title:</strong>
-<%= @article.title %>
-</p>
-
-<p>
-<strong>Text:</strong>
-<%= @article.text %>
-</p>
-
-<%= link_to 'Back', articles_path %>
-<%= link_to 'Edit', edit_article_path(@article) %>
+<%= render 'layouts/header' %>
+<div class="container">
+  <div class="row">
+    <div class="card col-sm-12">
+      <div class="card-body">
+        <div class="card-title">
+          <strong><%= @article.title %></strong>
+        </div>
+        <p class="card-text">
+        <div class="row">
+          <%= @article.text %>
+        </div>
+        <div class="row">
+          <%= link_to 'Back', articles_path, class: "btn btn-info col-sm-2" %>
+          <%= link_to 'Edit', edit_article_path(@article), class: "btn btn-success col-sm-2" %>
+        </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
