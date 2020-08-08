@@ -1,3 +1,9 @@
-<h1>Disini tampil user yang telah dibuat</h1>
-<%= @user.username %>
-<%= @user.password %>
+<%= render "layouts/header" %>
+<h1>user : <%= @user.username %>
+</h1>
+<h2>
+  password : 
+  <%= @user.password %>
+</h2>
+
+<%= link_to :Kembali, users_path, class: "btn btn-warning" %>

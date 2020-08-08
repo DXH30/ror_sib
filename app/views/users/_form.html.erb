@@ -1,0 +1,8 @@
+<%= form_with model: @user, local: true do |form| %>
+  <%= form.label :username, class: "form-label" %>
+  <%= form.text_field :username, class: "form-control" %>
+  <%= form.label :password, class: "form-label" %>
+  <%= form.password_field :password, class: "form-control" %>
+  <%= link_to :"Kembali", users_path, class: "btn btn-info" %>
+  <%= form.submit :Kirim, class: "btn btn-success" %>
+<% end %>
